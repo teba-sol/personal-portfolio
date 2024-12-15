@@ -24,17 +24,17 @@ const Navbar = () => {
       <div className="flex items-center gap-6 text-2xl">
         {[
           {
-            href: "https://www.linkedin.com/in/your-linkedin-profile",
+            href: "https://www.linkedin.com/in/tebibu-solomon-4aba64320/",
             icon: <FaLinkedin />,
             label: "LinkedIn",
           },
           {
-            href: "https://www.github.com/your-github-profile",
+            href: "https://github.com/teba-sol",
             icon: <FaGithub />,
             label: "Github",
           },
           {
-            href: "https://www.instagram.com/your-instagram-profile",
+            href: "https://www.instagram.com/bibe_solomon",
             icon: <FaInstagram />,
             label: "Instagram",
           },

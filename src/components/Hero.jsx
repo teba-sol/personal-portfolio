@@ -24,19 +24,29 @@ const Hero = () => {
     <div className="pb-4 lg:mb-36">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
-          <div className="flex justify-center lg:p-8">
-          <motion.img
-  src={tebapic}
-  alt="myPhoto"
-  className="border border-stone-900 rounded-full w-full max-w-xs h-auto"
-  initial={{ y: 0, opacity: 1 }}
-  animate={{ y: [0, -20, 0] }} // Only animate the y property
-  transition={{
-    duration: 2,
-    repeat: Infinity,
-    repeatType: "loop",
-  }}
-/>
+          <div className="flex flex-col items-center lg:p-8">
+            <motion.img
+              src={tebapic}
+              alt="myPhoto"
+              className="border border-stone-900 rounded-full w-full max-w-xs h-auto"
+              initial={{ y: 0, opacity: 1 }}
+              animate={{ y: [0, -20, 0] }} // Only animate the y property
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            />
+            <motion.div
+              className="mt-4 text-center text-2xl font-bold text-white shadow-lg"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <span className="bg-gradient-to-r from-blue-300 to-purple-400 bg-clip-text text-transparent shadow-lg">
+                Tebibu Solomon
+              </span>
+            </motion.div>
           </div>
         </div>
         <div className="w-full lg:w-1/2">
@@ -54,35 +64,38 @@ const Hero = () => {
             >
               Full Stack Developer
             </motion.span>
-            <motion.p
-              className="my-6 max-w-lg py-6 text-lg leading-relaxed tracking-wide text-gray-300 lg:text-xl ml-9"
-            >
-              <span className="bg-gradient-to-r from-blue-400 via-green-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                I am a passionate full stack developer
-              </span>{' '}
-              <span className="font-medium text-white">
+            <motion.p className="my-6 max-w-lg py-6 text-lg leading-relaxed tracking-wide text-white lg:text-xl ml-9">
+              <span>I am a passionate full stack developer </span>
+              <span className="italic">
                 with a knack for crafting robust and scalable web applications.
-              </span>{' '}
-              <span className="italic text-gray-400">
-                With 5 years of hands-on experience, I have honed my skills in front-end technologies like
-              </span>{' '}
-              <span className="text-blue-300 font-semibold">React</span>{' '}
-              <span className="text-green-300 font-semibold">and Next.js,</span>{' '}
-              <span className="font-medium text-gray-300">
-                as well as back-end technologies like
-              </span>{' '}
-              <span className="text-purple-300 font-semibold">Node.js,</span>{' '}
-              <span className="text-yellow-400 font-semibold">MySQL,</span>{' '}
-              <span className="text-teal-300 font-semibold">PostgreSQL,</span>{' '}
-              <span className="text-orange-300 font-semibold">and MongoDB.</span>{' '}
-              <span className="font-medium text-gray-400">
-                My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
+              </span>{" "}
+              <span className="italic">
+                With 3 years of hands-on experience, I have honed my skills in
+                front-end technologies like{" "}
+              </span>
+              <span className="text-blue-300 font-semibold">React</span>
+              <span>, </span>
+              <span className="text-green-300 font-semibold">Next.js</span>
+              <span>, </span>
+              <span>as well as back-end technologies like </span>
+              <span className="text-purple-300 font-semibold">Node.js</span>
+              <span>, </span>
+              <span className="text-yellow-400 font-semibold">MySQL</span>
+              <span>, </span>
+              <span className="text-teal-300 font-semibold">PostgreSQL</span>
+              <span>, and </span>
+              <span className="text-orange-300 font-semibold">MongoDB</span>
+              <span>. </span>
+              <span>
+                My goal is to leverage my expertise to create innovative
+                solutions that drive business growth and deliver exceptional
+                user experiences.
               </span>
             </motion.p>
 
             <motion.a
               variants={childVariant}
-              href="/Tebibus'sCv.pdf"
+              href="/Tebibus_Cv.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download

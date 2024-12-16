@@ -95,7 +95,7 @@ const Hero = () => {
 
             <motion.a
               variants={childVariant}
-              href="/Tebibus_Cv.pdf"
+              href="/myCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
